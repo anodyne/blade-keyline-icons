@@ -67,35 +67,6 @@ use Anodyne\KeylineIcons\KeylineIcon;
 svg(KeylineIcon::AlertCircle->value);
 ```
 
-## Compiling icons
-
-Run `bun install --frozen-lockfile`, then `bun run build` to render every icon from
-`@keyline-icons/react/dist`, optimize the SVGs with SVGO, and regenerate
-`src/KeylineIcon.php`. Generated SVGs live in `resources/svg`; rebuilding removes
-SVGs in that directory that are no longer exported by the source package.
-
-| Source module | SVG suffix | Enum case suffix |
-| --- | --- | --- |
-| duotone | -duotone.svg | Duotone |
-| fill | -fill.svg | Fill |
-| index | -rounded.svg | (none) |
-| sharp | -sharp.svg | Sharp |
-| sharp-duotone | -sharp-duotone.svg | SharpDuotone |
-| sharp-fill | -sharp-fill.svg | SharpFill |
-
-For example, `KeylineIcon::AppCheck->value` is `keyline-app-check-rounded`.
-Use `composer update-icons` to update the source package and rebuild.
-
-## Testing
-
-Run `composer install` and `bun install --frozen-lockfile`, then `composer test`.
-The suite covers Blade rendering, icon publishing, enum coverage, SVG validity,
-and compilation in a temporary directory. The compilation tests require Bun
-and the JavaScript dependencies; run `vendor/bin/pest --exclude-group=compilation`
-to run only the PHP package tests.
-
-
-
 ## Changelog
 
 Check out the [CHANGELOG](CHANGELOG.md) in this repository for all the recent changes.
