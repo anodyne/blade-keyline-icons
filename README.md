@@ -86,8 +86,17 @@ SVGs in that directory that are no longer exported by the source package.
 For example, `KeylineIcon::AppCheck->value` is `keyline-app-check-rounded`.
 Use `composer update-icons` to update the source package and rebuild.
 
-## Changelog
+## Testing
 
+Run `composer install` and `bun install --frozen-lockfile`, then `composer test`.
+The suite covers Blade rendering, icon publishing, enum coverage, SVG validity,
+and compilation in a temporary directory. The compilation tests require Bun
+and the JavaScript dependencies; run `vendor/bin/pest --exclude-group=compilation`
+to run only the PHP package tests.
+
+
+
+## Changelog
 
 Check out the [CHANGELOG](CHANGELOG.md) in this repository for all the recent changes.
 

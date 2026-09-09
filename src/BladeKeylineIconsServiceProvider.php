@@ -13,7 +13,7 @@ final class BladeKeylineIconsServiceProvider extends ServiceProvider
     {
         $this->callAfterResolving(Factory::class, function (Factory $factory) {
             $factory->add('keyline', [
-                'path' => __DIR__.'/../resources/svg',
+                'path' => __DIR__.'/../svg/resources',
                 'prefix' => 'keyline',
                 'class' => 'keyline-icon',
             ]);
@@ -24,7 +24,7 @@ final class BladeKeylineIconsServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../resources/svg' => public_path('vendor/blade-keyline-icons'),
+                __DIR__.'/../svg/resources' => public_path('vendor/blade-keyline-icons'),
             ], 'blade-keyline-icons');
         }
     }
