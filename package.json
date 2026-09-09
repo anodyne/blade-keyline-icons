@@ -1,0 +1,14 @@
+{
+  "$schema": "https://www.schemastore.org/package.json",
+  "private": true,
+  "packageManager": "bun@1.3.14",
+  "scripts": {
+    "build": "bun ./bin/compile-icons.mjs"
+  },
+  "devDependencies": {
+    "@keyline-icons/react": "^0.5.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "svgo": "^4.1.0"
+  }
+}
