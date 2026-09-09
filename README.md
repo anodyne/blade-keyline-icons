@@ -6,7 +6,7 @@
 
 A package to easily make use of [Keyline Icons](https://keylineicons.com/) in your Laravel Blade views.
 
-For a full list of available icons see [the SVG directory](svg/resources) or preview them on the [web](https://keylineicons.com/icons).
+For a full list of available icons see [the SVG directory](resources/svg) or preview them on the [web](https://keylineicons.com/icons).
 
 ## Requirements
 
@@ -71,7 +71,7 @@ svg(KeylineIcon::AlertCircle->value);
 
 Run `bun install --frozen-lockfile`, then `bun run build` to render every icon from
 `@keyline-icons/react/dist`, optimize the SVGs with SVGO, and regenerate
-`src/KeylineIcon.php`. Generated SVGs live in `svg/resources`; rebuilding removes
+`src/KeylineIcon.php`. Generated SVGs live in `resources/svg`; rebuilding removes
 SVGs in that directory that are no longer exported by the source package.
 
 | Source module | SVG suffix | Enum case suffix |

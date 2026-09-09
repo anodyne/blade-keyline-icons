@@ -4,7 +4,7 @@ import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { optimize } from 'svgo';
 
-const svgDirectory = new URL('../svg/resources/', import.meta.url);
+const svgDirectory = new URL('../resources/svg/', import.meta.url);
 const enumPath = new URL('../src/KeylineIcon.php', import.meta.url);
 const variants = [
     ['duotone', 'duotone', 'Duotone'],
