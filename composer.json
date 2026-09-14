@@ -49,7 +49,7 @@
       "vendor/bin/pint"
     ],
     "update-icons": [
-      "bun update @keyline-icons/react",
+      "bun update @keyline-icons/react --latest",
       "bun run build"
     ],
     "test": "vendor/bin/pest --colors=always"

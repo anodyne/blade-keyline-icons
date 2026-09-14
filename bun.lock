@@ -4,7 +4,7 @@
   "workspaces": {
     "": {
       "devDependencies": {
-        "@keyline-icons/react": "^0.5.0",
+        "@keyline-icons/react": "^0.9.0",
         "react": "^19.2.8",
         "react-dom": "^19.2.8",
         "svgo": "^4.1.0",
@@ -12,7 +12,7 @@
     },
   },
   "packages": {
-    "@keyline-icons/react": ["@keyline-icons/react@0.5.0", "", { "peerDependencies": { "react": ">=18" } }, "sha512-HDqIrullBbQ5khmAUoNu5PbNB/TRSK5sp6rkfK4+8igN25RxRz5cQAgeoGM1YDGy+ViTnGtqtjG+NJ//u3UM1w=="],
+    "@keyline-icons/react": ["@keyline-icons/react@0.9.0", "", { "peerDependencies": { "react": ">=18" } }, "sha512-DmapgTyT0jP9E9SZw/G6DXYzgpF0XedKqaR0yPen3DVP2yAQ2ge2BcDSi6ehU1cn6yG4vtSYin6s7oitHaSvTg=="],
 
     "boolbase": ["boolbase@1.0.0", "", {}, "sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww=="],
 
