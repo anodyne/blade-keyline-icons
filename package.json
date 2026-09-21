@@ -6,7 +6,7 @@
     "build": "bun ./bin/compile-icons.mjs"
   },
   "devDependencies": {
-    "@keyline-icons/react": "^0.9.0",
+    "@keyline-icons/react": "^1.0.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "svgo": "^4.1.0"
